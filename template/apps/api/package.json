@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "dev": "NODE_ENV=development APP_ENV=development ts-node-dev --respawn --transpile-only src/app.ts",
+    "dev": "NODE_ENV=development APP_ENV=development ts-node-dev --respawn --transpile-only --exit-child src/app.ts",
     "start": "ts-node src/app.ts",
     "migrate-dev": "NODE_ENV=development APP_ENV=development ts-node src/migrator.ts",
     "migrate": "ts-node src/migrator.ts",
